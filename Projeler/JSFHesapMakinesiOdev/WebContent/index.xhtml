@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:body>
+	<h:form>
+		<h:panelGrid columns="2">
+  		Birini değer = <h:inputText value="#{hesapMakinesi.deger1}" /> 
+  		İkinci değer = <h:inputText value="#{hesapMakinesi.deger2}" />
+  		Sonuç = <h:outputText value="#{hesapMakinesi.sonuc}" />
+			<h:panelGroup>
+				<h:commandButton actionListener="#{hesapMakinesi.topla}"
+					value="Topla" /> &nbsp;
+				<h:commandButton actionListener="#{hesapMakinesi.cikar}"
+					value="Çikar" />&nbsp;
+				<h:commandButton actionListener="#{hesapMakinesi.carpma}"
+					value="Çarp" />&nbsp;
+				<h:commandButton actionListener="#{hesapMakinesi.bolme}" value="Böl" />
+			</h:panelGroup><br/>
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

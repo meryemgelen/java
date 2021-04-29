@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.tus{
+	width: 3rem;
+	height: 3rem;
+}
+
+.sonuc{
+    font-size: 2rem;
+    width: 13rem;
+    text-align: right;
+}
